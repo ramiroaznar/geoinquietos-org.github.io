@@ -1,0 +1,60 @@
+// using plain bootstrap
+@import "../../bower_components/bootstrap/less/bootstrap.less";
+
+// import flatui
+@import "../../bower_components/flatui/less/flat-ui.less";
+
+// responsive
+@import "../../bower_components/bootstrap/less/responsive.less"; // Don't forget to comment lines 22 to remove the second import call to **mixin.less**
+
+@iconSpritePath: "../images/glyphicons-halflings.png";
+@iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+
+
+.map {
+  background-color: @midnight-blue;
+  height: 400px;
+  width: 100%;
+}
+
+html,
+body {
+	height: 100%;
+	/* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	/* Negative indent footer by it's height */
+	margin: 0 auto -50px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+	height: 40px;
+}
+#footer {
+	padding-top:10px;
+}
+
+#footer, .header{
+	background-color:@clouds;
+}
+
+.header .nav{
+	margin-bottom:10px;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+	#footer {
+	  margin-left: -20px;
+	  margin-right: -20px;
+	  padding-left: 20px;
+	  padding-right: 20px;
+	}
+}

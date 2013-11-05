@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [{
+    "type": "Feature",
+    "properties": {
+      "group": "Geoinquietos Valencia",
+      "twitter": "@geoinquietosvlc",
+      "web": "http://valencia.geoinquietos.org",
+      "mailing-list": "https://lists.osgeo.org/mailman/listinfo/valencia"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-0.4,39.5]
+    }
+  },{
+    "type": "Feature",
+    "properties": {
+      "group": "Geoinquietos Madrid",
+      "twitter": "@geoinquietosmad",
+      "web": "http://madrid.geoinquietos.org",
+      "mailing-list": "https://lists.osgeo.org/mailman/listinfo/madrid"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [-3.7,40.42]
+    }
+  }
+  ]
+}
