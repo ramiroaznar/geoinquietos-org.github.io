@@ -1,0 +1,25 @@
+source:           app
+destination:      jkl
+
+# This is the default format. 
+# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink: /:year/:month/:day/:title 
+
+exclude:
+  - "README.md"
+
+# auto: true
+pygments: true
+lsi: false
+production: false
+
+# Themes are encouraged to use these universal variables 
+# so be sure to set them if your theme uses them.
+#
+title : Geoinquietos
+tagline: Con el ánimo inquieto
+author :
+  name : Jorge Sanz
+  email : xurxosanz@gmail.com
+  github : jsanz
+  twitter : xurxosanz
