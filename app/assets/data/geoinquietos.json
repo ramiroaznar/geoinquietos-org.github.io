@@ -64,6 +64,86 @@
           -34.62190760563037
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "group": "Xeoinquedos",
+        "twitter": "@xeoinquedos",
+        "web": "http://xeoinquedos.wordpress.com",
+        "mailinglist": "https://lists.osgeo.org/mailman/listinfo/es_norte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.548908233642578,
+          42.877851048516725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "group": "Geoinquetos Cantabria",
+        "twitter": "@geoinquietoscan",
+        "web": "http://wiki.osgeo.org/wiki/Geoinquietos_Cantabria",
+        "mailinglist": "https://lists.osgeo.org/mailman/listinfo/cantabria"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.8036727905273438,
+          43.46114297833903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "group": "Geoinquietos Sevilla",
+        "twitter": "@geoinquietossvq",
+        "web": "http://wiki.osgeo.org/wiki/Category:Geoinquietos_Sevilla",
+        "mailinglist": "https://lists.osgeo.org/mailman/listinfo/sevilla"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.987377166748047,
+          37.37718272170154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "group": "Geoinquietos Tenerife",
+        "twitter": "@GeoinquietosTF",
+        "web": "http://geoinquietostenerife.wordpress.com/",
+        "mailinglist": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.641926765441895,
+          28.27316616460449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "group": "Geoinquietos México",
+        "twitter": "@GeoinquietosMX",
+        "web": "http://wiki.osgeo.org/wiki/Category:Geoinquietos_M%C3%A9xico_DF",
+        "mailinglist": "http://lists.osgeo.org/cgi-bin/mailman/listinfo/mexico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.13281440734863,
+          19.43264095208602
+        ]
+      }
     }
   ]
 }
