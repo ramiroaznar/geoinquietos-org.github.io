@@ -105,8 +105,11 @@ function () {
       };
 
       // Get the features
+
+      /* jshint -W106 */
       var features = markers.featureCache_.getFeaturesObject();
-      var featureid, feature;
+
+      var feature;
       feature = features[187];
       move(feature);
     });
