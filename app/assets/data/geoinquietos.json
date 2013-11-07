@@ -1,29 +1,149 @@
 {
   "type": "FeatureCollection",
-  "features": [{
-    "type": "Feature",
-    "properties": {
-      "group": "Geoinquietos Valencia",
-      "twitter": "@geoinquietosvlc",
-      "web": "http://valencia.geoinquietos.org",
-      "mailing-list": "https://lists.osgeo.org/mailman/listinfo/valencia"
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "group": "Geoinquietos Valencia",
+        "twitter": "@geoinquietosvlc",
+        "web": "http://valencia.geoinquietos.org",
+        "mailinglist": "https://lists.osgeo.org/mailman/listinfo/valencia"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.4,
+          39.5
+        ]
+      }
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [-0.4,39.5]
-    }
-  },{
-    "type": "Feature",
-    "properties": {
-      "group": "Geoinquietos Madrid",
-      "twitter": "@geoinquietosmad",
-      "web": "http://madrid.geoinquietos.org",
-      "mailing-list": "https://lists.osgeo.org/mailman/listinfo/madrid"
+    {
+      "type": "Feature",
+      "properties": {
+        "group": "Geoinquietos Madrid",
+        "twitter": "@geoinquietosmad",
+        "web": "http://madrid.geoinquietos.org",
+        "mailinglist": "https://lists.osgeo.org/mailman/listinfo/madrid"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.7,
+          40.42
+        ]
+      }
     },
-    "geometry": {
-      "type": "Point",
-      "coordinates": [-3.7,40.42]
+    {
+      "type": "Feature",
+      "properties": {
+        "group": "Geoinquiets",
+        "twitter": "@geoinquiets",
+        "web": "http://geoinquiets.cat",
+        "mailinglist": "https://lists.osgeo.org/mailman/listinfo/madrid"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.186923027038574,
+          41.40349917459407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "group": "Geoinquietos Argentina",
+        "twitter": "@geoinquietosarg",
+        "web": "http://wiki.osgeo.org/wiki/Geoinquietos_Argentina",
+        "mailinglist": "https://lists.osgeo.org/mailman/listinfo/argentina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -58.38066101074218,
+          -34.62190760563037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "group": "Xeoinquedos",
+        "twitter": "@xeoinquedos",
+        "web": "http://xeoinquedos.wordpress.com",
+        "mailinglist": "https://lists.osgeo.org/mailman/listinfo/es_norte"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -8.548908233642578,
+          42.877851048516725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "group": "Geoinquetos Cantabria",
+        "twitter": "@geoinquietoscan",
+        "web": "http://wiki.osgeo.org/wiki/Geoinquietos_Cantabria",
+        "mailinglist": "https://lists.osgeo.org/mailman/listinfo/cantabria"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.8036727905273438,
+          43.46114297833903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "group": "Geoinquietos Sevilla",
+        "twitter": "@geoinquietossvq",
+        "web": "http://wiki.osgeo.org/wiki/Category:Geoinquietos_Sevilla",
+        "mailinglist": "https://lists.osgeo.org/mailman/listinfo/sevilla"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.987377166748047,
+          37.37718272170154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "group": "Geoinquietos Tenerife",
+        "twitter": "@GeoinquietosTF",
+        "web": "http://geoinquietostenerife.wordpress.com/",
+        "mailinglist": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.641926765441895,
+          28.27316616460449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "group": "Geoinquietos México",
+        "twitter": "@GeoinquietosMX",
+        "web": "http://wiki.osgeo.org/wiki/Category:Geoinquietos_M%C3%A9xico_DF",
+        "mailinglist": "http://lists.osgeo.org/cgi-bin/mailman/listinfo/mexico"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -99.13281440734863,
+          19.43264095208602
+        ]
+      }
     }
-  }
   ]
 }
