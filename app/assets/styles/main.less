@@ -4,18 +4,15 @@
 // import flatui
 @import "../../bower_components/flatui/less/flat-ui.less";
 
+// Lato font face
+@import "fonts.less";
+
 // responsive
 @import "../../bower_components/bootstrap/less/responsive.less"; // Don't forget to comment lines 22 to remove the second import call to **mixin.less**
 
 @iconSpritePath: "../images/glyphicons-halflings.png";
 @iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
 
-
-.map {
-  background-color: @midnight-blue;
-  height: 400px;
-  width: 100%;
-}
 
 html,
 body {
@@ -57,4 +54,16 @@ body {
 	  padding-left: 20px;
 	  padding-right: 20px;
 	}
+}
+
+
+.map {
+  background-color: @midnight-blue;
+  height: 400px;
+  width: 100%;
+}
+
+
+#popup {
+  padding-bottom: 45px;
 }
