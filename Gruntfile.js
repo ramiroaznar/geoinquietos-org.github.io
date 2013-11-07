@@ -1,3 +1,4 @@
+/* jshint indent:4 */
 // Generated on 2013-11-05 using generator-jekyll 0.1.0
 'use strict';
 
@@ -123,7 +124,7 @@ module.exports = function (grunt) {
         jekyll: {
             dist: {
                 src: '<%= yeoman.app %>',
-                dest: '<%= yeoman.jekyll %>',
+                dest: '<%= yeoman.jekyll %>'
             }
         },
         rev: {
@@ -260,6 +261,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
+        'jshint',
         'recess',
         'copy:server',
         'jekyll',
