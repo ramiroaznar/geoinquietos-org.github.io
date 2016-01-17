@@ -7,7 +7,7 @@ latitude: 37.904
 
 social:
   twitter: GeoinquietosODB
-
+  github: geoinquietoscordoba
 websites:
   main: http://cordoba.geoinquietos.org
 ---

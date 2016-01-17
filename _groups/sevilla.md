@@ -7,6 +7,7 @@ latitude: 37.377
 
 social:
   twitter: geoinquietossvq
+  github: GeoinquietosSevilla
   meetup: http://www.meetup.com/Geoinquietos-Sevilla/
 
 websites:
