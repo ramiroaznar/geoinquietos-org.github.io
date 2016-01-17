@@ -35,3 +35,11 @@ defaults:
       type: contacts
     values:
       layout: contact
+
+cartodb:
+  viz: https://team.cartodb.com/u/jsanz/api/v2/viz/3b8c1192-bd31-11e5-88e5-0ea31932ec1d/viz.json
+  center:
+    lat: 5
+    lon: -44
+  zoom: 2
+  group_zoom: 7

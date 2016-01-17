@@ -1,6 +1,19 @@
 ---
 layout: default
 ---
+
+
+<style>
+  #map{
+    width:100%;
+    height:200px;
+    margin-bottom: 20px;
+  }
+  #group-links{
+    float: left;
+  }
+</style>
+
 <div class="post">
 
   <header class="post-header">
@@ -9,6 +22,8 @@ layout: default
 
   <article class="post-content">
     <div class="contact-details">
+      <div id="map"></div>
+
       <img id="avatar" src="" />
 
       <ul>
@@ -33,3 +48,15 @@ layout: default
 
 </div>
 {% include avatar_js.html %}
+{% include cartodb_js.html %}
+<script type="text/javascript">
+  $(document).ready(function(){
+    var url = "{{site.cartodb.viz}}";
+
+    cartodb.createVis('map',url,{
+      center_lat: {{page.latitude}},
+      center_lon: {{page.longitude}},
+      zoom: {{site.cartodb.group_zoom}}
+    });
+  })
+</script>

@@ -2,6 +2,17 @@
 layout: default
 ---
 
+<style>
+  #map{
+    float: right;
+    width:58%;
+    height:300px;
+  }
+  #group-links{
+    float: left;
+  }
+</style>
+
 <div class="home">
 
 <h1>Bienvenido</h1>
@@ -13,13 +24,33 @@ layout: default
 <p> Si estás interesado en crear un grupo nuevo suscríbete a esta <a href="http://lists.osgeo.org/mailman/listinfo/geoinquietos-es">lista de correo</a>, preséntate y estaremos encantados de guiarte.</p>
 
 <h2>Grupos</h2>
-<ul>
-  {% for group in site.groups %}
-    <li>
-        <a href="{{ site.baseurl }}/groups/{{ group.id }}">{{ group.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
 
+<div id="group-links">
+  <ul>
+    {% for group in site.groups %}
+      <li>
+          <a href="{{ site.baseurl }}/groups/{{ group.id }}">{{ group.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+
+
+<div id="map"></div>
 
 </div>
+
+
+{% include cartodb_js.html %}
+<script type="text/javascript">
+  $(document).ready(function(){
+    var url = "{{site.cartodb.viz}}";
+
+    cartodb.createVis('map',url,{
+      center_lat: {{site.cartodb.center.lat}},
+      center_lon: {{site.cartodb.center.lon}},
+      zoom: {{site.cartodb.zoom}}
+    });
+  })
+</script>
