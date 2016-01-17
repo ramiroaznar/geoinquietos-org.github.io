@@ -9,5 +9,5 @@ social:
   twitter: xeoinquedos
 
 websites:
-  main: http://xeoinquedos.wordpress.com
+  main: http://galicia.geoinquietos.org
 ---

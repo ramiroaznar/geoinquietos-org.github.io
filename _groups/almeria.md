@@ -9,5 +9,5 @@ social:
   twitter: GeoinquietosALM
 
 websites:
-  main: https://foro.hacklabalmeria.net/c/geoinquietosalm
+  main: http://almeria.geoinquietos.org
 ---

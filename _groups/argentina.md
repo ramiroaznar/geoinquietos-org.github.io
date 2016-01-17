@@ -9,5 +9,5 @@ social:
   twitter: geoinquietosarg
 
 websites:
-  main: http://wiki.osgeo.org/wiki/Geoinquietos_Argentina
+  main: http://argentina.geoinquietos.org
 ---

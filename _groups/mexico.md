@@ -9,5 +9,5 @@ social:
   twitter: GeoinquietosMX
 
 websites:
-  main: http://wiki.osgeo.org/wiki/Category:Geoinquietos_M%C3%A9xico_DF
+  main: http://mexico.geoinquietos.org
 ---

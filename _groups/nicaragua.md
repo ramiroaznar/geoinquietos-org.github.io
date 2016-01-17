@@ -9,5 +9,5 @@ social:
   twitter: geoinquietos_ni
 
 websites:
-  main: https://wiki.osgeo.org/wiki/Category:Geoinquietos_Nicaragua
+  main: https://nicaragua.geoinquietos.org
 ---

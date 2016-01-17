@@ -9,5 +9,5 @@ social:
   twitter: GeoinquietosODB
 
 websites:
-  main: https://wiki.osgeo.org/wiki/Category:Geoinquietos_C%C3%B3rdoba
+  main: http://cordoba.geoinquietos.org
 ---
