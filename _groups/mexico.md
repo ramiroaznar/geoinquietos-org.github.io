@@ -2,7 +2,7 @@
 id: mexico
 title:  "Geoinquietos México"
 mailing-list: http://lists.osgeo.org/mailman/listinfo/mexico
-longitude: --99.133
+longitude: -99.133
 latitude: 19.433
 
 social:
