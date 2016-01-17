@@ -37,7 +37,9 @@ layout: default
 
 
 
-<div id="map"></div>
+<div class="map_wrapper">
+  <div id="map"></div>
+</div>
 
 </div>
 
@@ -45,12 +47,35 @@ layout: default
 {% include cartodb_js.html %}
 <script type="text/javascript">
   $(document).ready(function(){
-    var url = "{{site.cartodb.viz}}";
-
-    cartodb.createVis('map',url,{
-      center_lat: {{site.cartodb.center.lat}},
-      center_lon: {{site.cartodb.center.lon}},
+    var map = L.map('map', {
+      zoomControl: false,
+      center: [{{site.cartodb.center.lat}}, {{site.cartodb.center.lon}}],
       zoom: {{site.cartodb.zoom}}
+    });
+
+    L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png',{
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OSM</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
+    }).addTo(map);
+
+    cartodb.createLayer(map, {
+      user_name: 'jsanz',
+      type: 'cartodb',
+      sublayers: [{
+        sql: "{{site.cartodb.sql}}",
+        cartocss: $('#cartoCSS').html()
+      }]
+    })
+    .addTo(map)
+    .done(function(layer){
+      // show infowindows on click
+      cdb.vis.Vis.addInfowindow(map, layer.getSubLayer(0), ['cartodb_id','_group','id'],{}).model.set({
+        //'sanitizeTemplate':false,
+        'template' :  function(object){
+            if (object && object.cartodb_id){
+                return Mustache.render($('#infowindow_template').html(),object)
+            }
+        }
+      });
     });
   })
 </script>

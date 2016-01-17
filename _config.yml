@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   con ellos.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://geoinquietos.org" # the base hostname & protocol for your site
+url: "http://test.geoinquietos.org" # the base hostname & protocol for your site
 
 #twitter_username: geoinquietos_es
 #github_username:  jsanz
@@ -43,3 +43,4 @@ cartodb:
     lon: -44
   zoom: 2
   group_zoom: 7
+  sql: "SELECT *, replace(_group,'Geoinquietos ','') as label FROM jsanz.groups"
