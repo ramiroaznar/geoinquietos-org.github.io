@@ -2,8 +2,8 @@
 id: cantabria
 title:  "Geoinquietos Cantabria"
 mailing-list: http://lists.osgeo.org/mailman/listinfo/cantabria
-longitude: -0.4
-latitude: 39.5
+longitude: -3.804
+latitude: 43.461
 
 social:
   twitter: geoinquietoscan
