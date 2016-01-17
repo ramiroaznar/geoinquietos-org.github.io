@@ -17,11 +17,21 @@ layout: default
 
 <h1>Bienvenido</h1>
 
-<p>Esta web recopila información básica sobre los diferentes grupos de geoinquietos existentes actualmente así como algunos de sus miembros.</p>
+<p>Esta web recopila información básica sobre los diferentes grupos de
+  geoinquietos existentes actualmente así como algunos de sus miembros.</p>
 
-<p>Geoinquietos no son más que grupos informales que se reúnen para conversar y aprender sobre cualquier tema relacionado con las ciencias de la tierra. No hay (todavía) una estructura formal por lo que cada grupo se organiza a su manera, aunque hay ciertas características comunes como son disponer de un foro de discusión, generalmente una lista de correo, y una cuenta en twitter. Puedes consultar más información en <a href="http://geoinquietosmadrid.github.io/geoinquietos-y-osgeoes/#/">esta presentación</a>.</p>
+<p>Geoinquietos no son más que grupos informales que se reúnen para conversar
+  y aprender sobre cualquier tema relacionado con las ciencias de la tierra.
+  No hay (todavía) una estructura formal por lo que cada grupo se organiza a
+  su manera, aunque hay ciertas características comunes como son disponer de
+  un foro de discusión, generalmente una lista de correo, y una cuenta en
+  twitter. Puedes consultar más información en
+  <a href="http://geoinquietosmadrid.github.io/geoinquietos-y-osgeoes/#/">
+    esta presentación</a>.</p>
 
-<p> Si estás interesado en crear un grupo nuevo suscríbete a esta <a href="http://lists.osgeo.org/mailman/listinfo/geoinquietos-es">lista de correo</a>, preséntate y estaremos encantados de guiarte.</p>
+<p> Si estás interesado en crear un grupo nuevo suscríbete a esta
+  <a href="http://lists.osgeo.org/mailman/listinfo/geoinquietos-es">lista de
+  correo</a>, preséntate y estaremos encantados de guiarte.</p>
 
 <h2>Grupos</h2>
 
@@ -29,13 +39,13 @@ layout: default
   <ul>
     {% for group in site.groups %}
       <li>
-          <a href="{{ site.baseurl }}/groups/{{ group.id }}">{{ group.title }}</a>
+          <a href="{{ site.baseurl }}/groups/{{ group.id }}">
+            {{ group.title }}
+          </a>
       </li>
     {% endfor %}
   </ul>
 </div>
-
-
 
 <div class="map_wrapper">
   <div id="map"></div>
@@ -68,7 +78,9 @@ layout: default
     .addTo(map)
     .done(function(layer){
       // show infowindows on click
-      cdb.vis.Vis.addInfowindow(map, layer.getSubLayer(0), ['cartodb_id','_group','id'],{}).model.set({
+      cdb.vis.Vis.addInfowindow(map, layer.getSubLayer(0),
+        ['cartodb_id','_group','id'],{})
+      .model.set({
         //'sanitizeTemplate':false,
         'template' :  function(object){
             if (object && object.cartodb_id){
