@@ -1,25 +1,37 @@
-source:           app
-destination:      jkl
+# Site settings
+title: Geoinquietos
+#email: xurxosanz@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Este sitio muestra los diferentes grupos de geoinquietos y cómo contactar
+  con ellos.
 
-# This is the default format. 
-# For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /:year/:month/:day/:title 
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://geoinquietos.org" # the base hostname & protocol for your site
 
-exclude:
-  - "README.md"
+#twitter_username: geoinquietos_es
+#github_username:  jsanz
 
-# auto: true
-pygments: true
-lsi: false
-production: false
+# Build settings
+markdown: kramdown
+highlighter: rouge
 
-# Themes are encouraged to use these universal variables 
-# so be sure to set them if your theme uses them.
-#
-title : Geoinquietos
-tagline: Con el ánimo inquieto
-author :
-  name : Jorge Sanz
-  email : xurxosanz@gmail.com
-  github : jsanz
-  twitter : xurxosanz
+# Collections
+collections:
+  groups:
+    output: true
+    permalink: /groups/:path/
+  contacts:
+    output: true
+    permalink: /contacts/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: groups
+    values:
+      layout: group
+  - scope:
+      path: ""
+      type: contacts
+    values:
+      layout: contact

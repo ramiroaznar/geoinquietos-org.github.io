@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="home">
+
+<h1>Bienvenido</h1>
+
+<p>Esta web recopila la información básica sobre los diferentes grupos de geoinquietos existentes actualmente. Puedes ver más información en el <a href="https://wiki.osgeo.org/wiki/Category:Iniciativas_Locales">wiki de OSGeo</a> y en <a href="http://geoinquietosmadrid.github.io/geoinquietos-y-osgeoes/#/">esta presentación</a>. Si estás interesado en crear un grupo nuevo suscríbete a esta <a href="http://lists.osgeo.org/mailman/listinfo/geoinquietos-es">lista de correo</a>, preséntate y estaremos encantados de guiarte.</p>
+
+<p>Iniciativas que surgen para promover la actividad de la comunidad entre personas de la misma zona geográfica y que comparten los objetivos de la fundación OSGeo.</p>
+
+
+
+<h2>Grupos</h2>
+<ul>
+  {% for group in site.groups %}
+    <li>
+        <a href="{{ site.baseurl }}/groups/{{ group.id }}">{{ group.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+
+</div>

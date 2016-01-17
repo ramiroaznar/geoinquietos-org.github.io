@@ -1,0 +1,16 @@
+<script>
+  $(document).ready(function(){
+    var github_username = "{{page.social.github}}";
+    var avatar = "{{page.avatar}}";
+
+    if (!avatar && github_username) {
+      $.ajax('https://api.github.com/users/' + github_username)
+        .done(function(data){
+          $('#avatar').attr('src',data.avatar_url);
+        })
+    } else if (avatar){
+      $('#avatar').attr('src',avatar);
+    }
+
+  });
+</script>

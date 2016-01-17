@@ -1,0 +1,31 @@
+---
+---
+{
+  "type": "FeatureCollection",
+  "features": [
+
+{% for group in site.groups %}
+    {
+      "type" : "Feature",
+      "properties": {
+        "id"    : "{{ group.id }}",
+        "group" : "{{ group.title }}",
+        "mailing-list" : "{{ group.mailing-list }}",
+        "social" : { {% for item in group.social %}
+          "{{ item[0] }}": "{{ item[1] }}"{% if forloop.last == false %},{% endif %}{% endfor %}
+        },
+        "websites" : { {% for item in group.websites %}
+          "{{ item[0] }}": "{{ item[1] }}"{% if forloop.last == false %},{% endif %}{% endfor %}
+        },
+        "contacts" : [{% capture cache %}{% for contact in site.contacts %}{% for cgroup in contact.groups %}{% if cgroup == group.id %}"{{contact.id}}",{% endif %}{% endfor %}{% endfor %}{% endcapture %}{% assign cache = cache | remove: ' ' | remove: '\r' %}{% assign cache_size = cache | size %}{% if cache_size > 0 %}{% assign cache_size = cache_size | minus: 1 %}{{cache | truncate: cache_size, '' }}{% endif %}{% assign cache = nil %}{% assign cache_size = nil %}]
+      },
+      "geometry" : {
+        "type" : "Point",
+        "coordinates" : [
+          {{ group.longitude}},
+          {{ group.latitude}}
+        ]
+      }
+    }{% if forloop.last == false %},{% endif %}{% endfor %}
+  ]
+}

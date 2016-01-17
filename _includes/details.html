@@ -1,0 +1,13 @@
+{% if page.websites.main %}
+<li><a href="{{page.websites.main}}">Sitio web</a></li>
+{% endif %}
+{% if page.social.twitter %}
+<li><a href="http://twitter.com/{{page.social.twitter}}">Twitter</a></li>
+{% endif %}
+{% if page.social.github %}
+<li><a href="http://github.com/{{page.social.github}}">Github</a></li>
+{% endif %}
+{% if page.e-mail %}
+<li><a href="mailto:{{page.e-mail}}">Correo de contacto</a></li>
+{% endif %}
+

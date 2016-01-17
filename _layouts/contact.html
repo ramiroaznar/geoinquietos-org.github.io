@@ -1,0 +1,37 @@
+---
+layout: page
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.name }}</h1>
+  </header>
+
+  <article class="post-content">
+    <div class="contact-details">
+      <img id="avatar" src="" />
+
+      <ul>
+{% include details.html %}
+
+        <li>Grupos:<ul>
+          {% for group in page.groups %}
+            {% for sgroup in site.groups %}
+              {% if group == sgroup.id %}
+              <li><a href="{{site.baseurl}}/groups/{{sgroup.id}}">{{sgroup.title}}</a>
+              </li>
+              {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </ul></li>
+      </ul>
+    </div>
+
+
+
+
+    {{ content }}
+  </article>
+
+</div>
+{% include avatar_js.html %}
