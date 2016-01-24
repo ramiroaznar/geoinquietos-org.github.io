@@ -34,7 +34,7 @@ layout: default
           {% for contact in site.contacts %}
             {% for cgroup in contact.groups %}
               {% if page.id == cgroup%}
-              <li><a href="{{site.baseurl}}/contacts/{{contact.id}}">{{contact.name}}</a>
+              <li><a href="{{site.baseurl}}/contactos/{{contact.id}}">{{contact.name}}</a>
               </li>
               {% endif %}
             {% endfor %}

@@ -19,10 +19,10 @@ highlighter: pygments
 collections:
   groups:
     output: true
-    permalink: /groups/:path/
+    permalink: /grupos/:path/
   contacts:
     output: true
-    permalink: /contacts/:path/
+    permalink: /contactos/:path/
 
 defaults:
   - scope:
