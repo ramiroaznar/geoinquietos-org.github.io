@@ -96,7 +96,7 @@ layout: default
     .addTo(map)
     .done(function(layer){
       // show infowindows on click
-      cdb.vis.Vis.addInfowindow(map, layer.getSubLayer(0), ['cartodb_id','_group','id'],{}).model.set({
+      cdb.vis.Vis.addInfowindow(map, layer.getSubLayer(0), ['cartodb_id','_group','id','main_website'],{}).model.set({
         //'sanitizeTemplate':false,
         'template' :  function(object){
             if (object && object.cartodb_id){
