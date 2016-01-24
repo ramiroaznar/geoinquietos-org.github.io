@@ -1,12 +1,13 @@
 ---
 id: marcos
 name: Moisés Arcos
-social:
-  twitter: MoiArcSan
-  github: moiarcsan
-  email: moiarcsan@gmail.com
+email: moiarcsan@gmail.com
+
 websites:
   main: https://moisesarcos.wordpress.com/
+  twitter: MoiArcSan
+  github: moiarcsan
+
 groups:
   - sevilla
 ---

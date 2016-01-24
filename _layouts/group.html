@@ -27,14 +27,14 @@ layout: default
       <img id="avatar" src="" />
 
       <ul>
-{% include details.html %}
         <li><a href="{{page.mailing-list}}">Lista de correo</a></li>
+{% include details.html %}
 
         <li>Contactos:<ul>
           {% for contact in site.contacts %}
             {% for cgroup in contact.groups %}
               {% if page.id == cgroup%}
-              <li><a href="{{site.baseurl}}/contacts/{{contact.id}}">{{contact.name}}</a>
+              <li><a href="{{site.baseurl}}/contactos/{{contact.id}}">{{contact.name}}</a>
               </li>
               {% endif %}
             {% endfor %}

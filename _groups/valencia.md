@@ -5,14 +5,12 @@ mailing-list: http://lists.osgeo.org/mailman/listinfo/valencia
 longitude: -0.4
 latitude: 39.5
 
-social:
-  twitter: geoinquietosvlc
-  github: geoinquietosvlc
-  facebook: https://www.facebook.com/geoinquietosVLC
-  meetup: http://www.meetup.com/Geoinquietos-Valencia
-
 websites:
-  main: http://valencia.geoinquietos.org
+  main     : http://valencia.geoinquietos.org
+  twitter  : geoinquietosvlc
+  github   : geoinquietosvlc
+  meetup   : Geoinquietos-Valencia
+  facebook : https://www.facebook.com/geoinquietosVLC
 
 e-mail: geoinquietosvlc@gmail.com
 ---

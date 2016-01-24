@@ -6,10 +6,10 @@ longitude: -5.987
 latitude: 37.377
 
 social:
-  twitter: geoinquietossvq
-  github: GeoinquietosSevilla
-  meetup: http://www.meetup.com/Geoinquietos-Sevilla/
 
 websites:
   main: http://sevilla.geoinquietos.org
+  twitter: geoinquietossvq
+  github: GeoinquietosSevilla
+  meetup: Geoinquietos-Sevilla/
 ---
