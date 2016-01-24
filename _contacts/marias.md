@@ -1,11 +1,12 @@
 ---
 id: marias
 name: María Arias de Reyna
-social:
-  twitter: delawen
-  github: delawen
+
 websites:
   main: http://delawen.com
+  twitter: delawen
+  github: delawen
+
 groups:
   - sevilla
 ---

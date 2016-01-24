@@ -1,10 +1,11 @@
 ---
 id: umartin
 name: Ulises Martín
-social:
-  twitter: ulisesmartin
+
 websites:
   main: http://ulisesmartin.com/
+  twitter: ulisesmartin
+
 groups:
   - mexico
 ---

@@ -1,11 +1,12 @@
 ---
 id: shiguera
 name: Santiago Higuera
-social:
-  twitter: santiagohiguera
-  github: shiguera
+
 websites:
   main: http://mercatorlab.com/
+  twitter: santiagohiguera
+  github: shiguera
+
 groups:
   - cantabria
   - madrid

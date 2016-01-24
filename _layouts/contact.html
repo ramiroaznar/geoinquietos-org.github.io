@@ -12,7 +12,7 @@ layout: default
       <img id="avatar" src="" />
 
       <ul>
-{% include details.html %}
+        {% include details.html %}
 
         <li>Grupos:<ul>
           {% for group in page.groups %}
@@ -27,11 +27,28 @@ layout: default
       </ul>
     </div>
 
-
-
-
     {{ content }}
+
+
+    <!-- links to site post entries -->
+    <h2 id="content-title" style="display:none;">Contenidos</h2>
+    <ul>
+    {% for post in site.posts %}
+      {% if post.author == page.id %}
+        <li class="post-list">
+          <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+            <h3 class="h2 post-title">{{ post.date | date: "%d-%m-%Y" }} - {{ post.title }}</h3>
+          </a>
+        </li>
+      {% endif %}
+    {% endfor %}
+    </ul>
   </article>
 
 </div>
 {% include avatar_js.html %}
+<script>
+  if ($('.post-list').length > 0){
+    $('#content-title').show();
+  }
+</script>
