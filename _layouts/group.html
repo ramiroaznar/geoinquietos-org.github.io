@@ -44,6 +44,23 @@ layout: default
     </div>
 
     {{ content }}
+
+    <!-- links to site post entries -->
+    <h2 id="content-title" style="display:none;">Noticias</h2>
+    <ul>
+    {% for post in site.posts %}
+      {% for category in post.categories %}
+        {% if page.id == category %}
+          <li class="post-list">
+            <a href="{{ post.url | prepend: site.baseurl }}" class="">
+              {{ post.date | date: "%d-%m-%Y" }} - {{ post.title }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    </ul>
+
   </article>
 
 </div>
@@ -51,6 +68,12 @@ layout: default
 {% include cartodb_js.html %}
 <script type="text/javascript">
   $(document).ready(function(){
+
+    if ($('.post-list').length > 0){
+      $('#content-title').show();
+    }
+
+
     var map = L.map('map', {
       zoomControl: false,
       center: [{{page.latitude}}, {{page.longitude}}],

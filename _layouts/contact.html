@@ -47,8 +47,11 @@ layout: default
 
 </div>
 {% include avatar_js.html %}
-<script>
-  if ($('.post-list').length > 0){
-    $('#content-title').show();
-  }
+<script type="application/javascript">
+
+  $(document).ready(function(){
+    if ($('.post-list').length > 0){
+      $('#content-title').show();
+    }
+  });
 </script>

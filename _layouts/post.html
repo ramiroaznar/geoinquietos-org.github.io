@@ -5,7 +5,22 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • <a href="/contactos/{{ page.author }}">{{ page.author}} </a>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} por <a href="/contactos/{{ page.author }}">{{ page.author}} </a> {% endif %} para
+
+        {% for category in page.categories %}
+          {% unless category == "meta" %}
+            <a href="/grupos/{{category}}">
+          {% endunless %}
+          {{category}}
+          {% unless category == "meta" %}
+            </a>
+          {% endunless %}
+          {% unless forloop.last %}
+            |
+          {% endunless %}
+        {% endfor %}
+
+    </p>
   </header>
 
   <article class="post-content">
