@@ -11,6 +11,8 @@ url: "http://test.geoinquietos.org" # the base hostname & protocol for your site
 #twitter_username: geoinquietos_es
 #github_username:  jsanz
 
+permalink:     "noticias/:categories/:year/:month/:day/:title.html"
+
 # Build settings
 markdown: kramdown
 highlighter: pygments
