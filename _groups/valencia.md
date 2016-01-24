@@ -1,16 +1,16 @@
 ---
-id: valencia
-title:  "Geoinquietos Valencia"
-mailing-list: http://lists.osgeo.org/mailman/listinfo/valencia
-longitude: -0.4
-latitude: 39.5
+id           : valencia
+title        :  "Geoinquietos Valencia"
+mailing-list : http://lists.osgeo.org/mailman/listinfo/valencia
+longitude    : -0.4
+latitude     : 39.5
 
 websites:
-  main     : http://valencia.geoinquietos.org
-  twitter  : geoinquietosvlc
-  github   : geoinquietosvlc
-  meetup   : Geoinquietos-Valencia
-  facebook : https://www.facebook.com/geoinquietosVLC
+  main       : http://valencia.geoinquietos.org
+  twitter    : geoinquietosvlc
+  github     : geoinquietosvlc
+  meetup     : Geoinquietos-Valencia
+  facebook   : https://www.facebook.com/geoinquietosVLC
 
-e-mail: geoinquietosvlc@gmail.com
+e-mail       : geoinquietosvlc@gmail.com
 ---

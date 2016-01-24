@@ -79,7 +79,7 @@ layout: default
     .done(function(layer){
       // show infowindows on click
       cdb.vis.Vis.addInfowindow(map, layer.getSubLayer(0),
-        ['cartodb_id','_group','id'],{})
+        ['cartodb_id','_group','id','main_website'],{})
       .model.set({
         //'sanitizeTemplate':false,
         'template' :  function(object){

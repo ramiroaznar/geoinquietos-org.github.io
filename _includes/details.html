@@ -2,10 +2,21 @@
     {% if page.websites.main %}
     <a href="{{page.websites.main}}">web</a>
     {% endif %}
+
     {% for site in page.websites %}
-      {% if site[0] != "main" %}
-        <a href="{{ site[1] }}">{{ site[0] }}</a>
-      {% endif %}
+      {% unless site[0] == "main" %}
+        {% if site[0] == "twitter" %}
+          {% assign url = site[1] | prepend: "https://twitter.com/" %}
+        {% elsif site[0] == "github" %}
+          {% assign url = site[1] | prepend: "https://github.com/" %}
+        {% elsif site[0] == "meetup" %}
+          {% assign url = site[1] | prepend: "http://www.meetup.com/es-ES/" %}
+        {% else %}
+          {% assign url = site[1] %}
+        {% endif %}
+        <a href="{{ url }}">{{site[0]}}</a>
+      {% endunless %}
+
       {% unless forloop.last %},{% endunless %}
     {% endfor %}
 </li>
