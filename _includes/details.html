@@ -1,16 +1,13 @@
-{% if page.websites.main %}
-<li><a href="{{page.websites.main}}">Sitio web</a></li>
-{% endif %}
-{% if page.social.twitter %}
-<li><a href="http://twitter.com/{{page.social.twitter}}">Twitter</a></li>
-{% endif %}
-{% if page.social.github %}
-<li><a href="http://github.com/{{page.social.github}}">Github</a></li>
-{% endif %}
-{% if page.e-mail %}
-<li><a href="mailto:{{page.e-mail}}">Correo de contacto</a></li>
-{% endif %}
-{% if page.social.meetup %}
-<li><a href="{{page.social.meetup}}">Meetup</a></li>
-{% endif %}
+<li>Enlaces:
+    {% if page.websites.main %}
+    <a href="{{page.websites.main}}">web</a>
+    {% endif %}
+    {% for site in page.websites %}
+      {% if site[0] != "main" %}
+        <a href="{{ site[1] }}">{{ site[0] }}</a>
+      {% endif %}
+      {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+</li>
+
 

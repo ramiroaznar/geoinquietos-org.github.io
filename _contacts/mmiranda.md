@@ -1,10 +1,11 @@
 ---
 id: mmiranda
 name: Mauricio Miranda
-social:
+
+websites:
   twitter: achikipaun
   github: maurimiranda
-websites:
+
 groups:
   - argentina
 ---

@@ -1,11 +1,12 @@
 ---
 id: iolea
 name: Ismael Olea
-social:
-  twitter: olea
-  github: olea
+
 websites:
   main: http://olea.org/diario/
+  twitter: olea
+  github: olea
+
 groups:
   - almeria
 ---
